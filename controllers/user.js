@@ -6,7 +6,7 @@ import ErrorHandler from "../middlewares/error.js";
 
 //using try catch block wherever the code is async.
 
-export const login = async (req,res, res)=>{
+export const login = async (req,res, next)=>{
     try {
         const {email,password} = req.body;
 
